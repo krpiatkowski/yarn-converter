@@ -11,7 +11,7 @@ function calculate() {
         return;
     }
 
-    const result = Math.ceil((fromG/fromM) / (toG/toM) * expected);
+    const result = Math.ceil((toG/toM) / (fromG/fromM) * expected);
     resultNode.innerText = result + "g";
 
 }

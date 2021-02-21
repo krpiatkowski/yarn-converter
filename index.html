@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Yarn converter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Yarn converter</h1>   
+        <div class="expected-container">
+            <h2>Expected material</h2>
+            <div>
+                <input id="expected" type="number" onkeyup="calculate()"> g
+            </div>
+        </div>    
+        <table class="conversion-container">
+            <tr>
+                <td>From</td>
+                <td><input id="from-g" type="number" onkeyup="calculate()"> g</td>
+                <td class="eq">=</td>
+                <td><input id="from-m"type="number" onkeyup="calculate()"> m</td>
+            </tr>
+            <tr>
+                <td>To</td>
+                <td><input id="to-g" type="number" onkeyup="calculate()"> g</td>
+                <td class="eq">=</td>
+                <td><input id="to-m" type="number" onkeyup="calculate()"> m</td>
+            </tr>        
+        </table>
+        <div class="converted-container">
+            <h2>Converted material</h2>
+            <div class="result">
+                <span id="result"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

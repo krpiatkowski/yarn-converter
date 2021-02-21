@@ -1,0 +1,23 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.expected-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > * {
+    margin: 30px;
+}
+
+.result{
+    display: flex;
+}

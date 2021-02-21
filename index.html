@@ -15,30 +15,32 @@
 <body>
     <div class="container">
         <h1>Yarn converter</h1>   
-        <div class="expected-container">
+        <div>
             <h2>Expected material</h2>
-            <div>
-                <input id="expected" type="number" onkeyup="calculate()"> g
-            </div>
+            <div id="expected-container"><input id="expected" type="number" onkeyup="calculate()"><div>g</div></div>
         </div>    
-        <table class="conversion-container">
-            <tr>
-                <td>From</td>
-                <td><input id="from-g" type="number" onkeyup="calculate()"> g</td>
-                <td class="eq">=</td>
-                <td><input id="from-m"type="number" onkeyup="calculate()"> m</td>
-            </tr>
-            <tr>
-                <td>To</td>
-                <td><input id="to-g" type="number" onkeyup="calculate()"> g</td>
-                <td class="eq">=</td>
-                <td><input id="to-m" type="number" onkeyup="calculate()"> m</td>
-            </tr>        
-        </table>
+        <div id="conversion-container">
+            <div class="conversion-row">
+                <div>From</div>
+                <div><input id="from-g" type="number" onkeyup="calculate()"></div>
+                <div>g</div>
+                <div class="eq">=</div>
+                <div><input id="from-m"type="number" onkeyup="calculate()"></div>
+                <div>m</div>
+            </div>
+            <div class="conversion-row">
+                <div>To</div>
+                <div><input id="to-g" type="number" onkeyup="calculate()"></div>
+                <div>g</div>
+                <div class="eq">=</div>
+                <div><input id="to-m"type="number" onkeyup="calculate()"></div>
+                <div>m</div>
+            </div>
+        </div>
         <div class="converted-container">
             <h2>Converted material</h2>
             <div class="result">
-                <span id="result"></span>
+                <div id="result">&nbsp;</div>
             </div>
         </div>
     </div>

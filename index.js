@@ -7,7 +7,7 @@ function calculate() {
     const resultNode =  document.getElementById('result');
 
     if([expected, fromG, fromM, toG, toM].includes(NaN)) {
-        resultNode.innerHTML = "&nbsp";
+        resultNode.innerHTML = "-";
         return;
     }
 
